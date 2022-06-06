@@ -1,5 +1,4 @@
 {% extends "home/base.html" %}
-{% load static %}
 
 {% block content %}    
     <article>
@@ -59,6 +58,15 @@
         Other Analysis methods like Moment Distribution Method and Kanni's Method will be made available in later versions.
 
         </section>
+        <br>
+        <section>
+            <h2> Sympy Beam Analysis Workflow </h2>  
+            <p>
+                Sympy Workflow is implemented under the hood. It can be seen at 
+                <a href="{% url 'sympy_workflow'%}" target="_blank">Sympy Beam Analysis Workflow</a> Jupyter Notebook.
+            </p>   
+        </section>
+
     </article>
    
 {% endblock content %}
