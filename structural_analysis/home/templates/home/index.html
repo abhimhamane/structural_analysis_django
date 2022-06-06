@@ -1,0 +1,65 @@
+{% extends "home/base.html" %}
+{% load static %}
+
+{% block content %}    
+    <article>
+        <h1 id="how-use-website">How to use this Website?</h1>
+        <section>
+            
+            <h2>Features Available:</h2>
+            
+            <ul>
+                <li>Beam Analysis</li>
+                <ul>
+                    <li>Shear Force Diagram</li>
+                    <li>Bending Moment Diagram</li>
+                    <li>Deflection Diagram</li>
+                </ul>
+                <li>What If Analysis</li>
+                <ul>
+                    <li>Support Effect</li>
+                    <li>Loading Effect</li>
+                    <li>Compare</li>
+                </ul>
+            </ul>
+            <br>
+            options for other structural elements like Truss, Frames, Columns will be added in newer versions.
+        </section>
+        <br>
+ 
+        <section>
+        
+            <h2>Beam Analysis</h2>
+            Beam Analysis- helps analyse beams using two methods: 
+            
+            <ol>
+                <li>Stiffness Matrix Method </li>  
+                <li>Slope Deflection Method</li>
+            </ol> 
+            <br>
+            One can get the outpit of analysis in form of SFD, BMD, Deflection Diagram and Detailed analytical solutions.
+            
+            Other Analysis methods like Moment Distribution Method and Kanni's Method will be made available in later versions.
+        
+        </section>
+        <br>
+        <section>
+            
+            <h2>What If Analysis</h2>
+            What If Analysis - Helps develop understanding by tweaking something and comparing SFD and BMD. 
+            
+            <ol>
+                <li>Support Effect - What happens when support conditions are changed?</li> 
+                <li>Loading Effect - What happens when loading conditions are changed?</li>
+                <li>Compare Mode - Compare two different beams (varying support and loading condition)</li>
+            </ol> 
+            <br>
+        One can get the outpit of analysis in form of SFD, BMD, Deflection Diagram and Detailed analytical solutions.
+        
+        Other Analysis methods like Moment Distribution Method and Kanni's Method will be made available in later versions.
+
+        </section>
+    </article>
+   
+{% endblock content %}
+

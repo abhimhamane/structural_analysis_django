@@ -1,0 +1,32 @@
+{% extends "home/base.html" %}
+{% block content %}
+    <p> block content implementation of Beam Home</p>
+    <table>
+        <thead>
+            <tr>
+                <td>Support Type</td>
+                <td> Support Location</td>
+                <td> Action </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <select name="support" id="#">
+                            <option value="pin">Pin</option>
+                            <option value="roller">Roller</option>
+                            <option value="fix">Fix</option>
+                            
+                          </select>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <input type="number">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock content %}

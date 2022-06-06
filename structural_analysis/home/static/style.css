@@ -1,0 +1,35 @@
+ol{
+    
+    margin: 0.2%;
+}
+ul{
+    margin: 0.2%;
+}
+li{
+    padding: 0.05%;
+}
+
+main h1{
+    display: block;
+    margin-bottom: 0.1%;
+    margin-top: 0.1%;
+    text-align: center;
+}
+main article{
+    
+    padding: 2%;
+}
+#how-use-website{
+    color: black;
+    font-size: xx-large;
+}
+main section {
+    display: block;
+    border-style: solid;
+    padding: 1%;
+    
+}
+main section p{
+    margin: 0;
+    padding: 2%;
+}
