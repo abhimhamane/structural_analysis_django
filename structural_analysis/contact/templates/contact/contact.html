@@ -4,14 +4,36 @@
 
 
 {% block content %}
-    <p> block content implementation of Contact Page</p>
+    <article>
+        <h1>About Us</h1>
+        <section>
+            
+            <p>
+                This website is designed by
+                <a href="https://abhimhamane.github.io/" target= "blank">Abhishek Mhamane
+                </a>, under the guidance of Dr. Ranjan Sonporate.
+            </p>
 
-    <form method="post" class="container">
-        {% csrf_token %}
-        {{ form | crispy}}
-        <div>
-            <button type="submit" value="submit">Submit</button>
-        </div>
-    </form>
+        </section>
+    </article>
+
+    <article>
+        <h2>Contributions</h2>
+        <section>
+            <p>
+                Feel free to look through python module hosted on github - <a href="https://github.com/abhimhamane/structural-analysis" target="_blank">Structural Analysis Python Module</a>.
+            </p>
+        </section>
+    </article>
+    <article>
+        <h2>Feedback</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form | crispy}}
+            <div>
+                <button type="submit" value="submit">Submit</button>
+            </div>
+        </form>
+    </article>    
 
 {% endblock content %}

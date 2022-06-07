@@ -1,32 +1,13 @@
 {% extends "home/base.html" %}
+
 {% block content %}
     <p> block content implementation of Beam Home</p>
-    <table>
-        <thead>
-            <tr>
-                <td>Support Type</td>
-                <td> Support Location</td>
-                <td> Action </td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <div>
-                        <select name="support" id="#">
-                            <option value="pin">Pin</option>
-                            <option value="roller">Roller</option>
-                            <option value="fix">Fix</option>
-                            
-                          </select>
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <input type="number">
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <p>
+      Click <a href="{% url 'beam-create' %}">here </a> to create beam 
+    </p>
+  
+    {% block beam_form %} {% endblock beam_form  %}
+
+    {% block beam_analysis %} {% endblock beam_analysis %}
+
 {% endblock content %}

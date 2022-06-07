@@ -14,10 +14,12 @@ def feedback(request):
         form = FeedbackForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
+            feedback_obj = form.save()
             # process the data in form.cleaned_data as required
             name = form.cleaned_data.get('name')
             print(name)
-            return HttpResponse("Thanks")
+            form = FeedbackForm()
+            return render(request, 'contact/contact.html',{'form': form})
             # redirect to a new URL:
             #return HttpResponse("/thanks/")
 

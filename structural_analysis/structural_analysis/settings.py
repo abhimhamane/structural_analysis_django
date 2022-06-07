@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'beam.apps.BeamConfig',
     'contact.apps.ContactConfig',
+    'sympy',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

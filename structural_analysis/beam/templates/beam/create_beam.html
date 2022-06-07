@@ -1,0 +1,12 @@
+{% extends "beam/home.html" %}
+{% load crispy_forms_tags %}
+{% block beam_form %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form | crispy}}
+        <div>
+            <button type="submit" value="submit">Submit</button>
+        </div>
+
+    </form>
+{% endblock beam_form  %}
